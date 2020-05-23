@@ -21,6 +21,8 @@ To run Node server:
 ### `yarn run build`
 ### `node src/server/server.js`
 
+For running tests:
+
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br />
