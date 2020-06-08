@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 
 const MainContent = () => {
+    const buttonText = useState("Get Started");
+    
     return (
         <div className="main">
-            <button>Get Started</button>
+            <button>{buttonText}</button>
         </div>
     );
 
