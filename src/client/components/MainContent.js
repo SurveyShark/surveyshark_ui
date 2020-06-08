@@ -1,14 +1,21 @@
 import React, {useState} from "react";
+import QuestionPage from "./QuestionPage";
 
-const MainContent = () => {
-    const buttonText = useState("Get Started");
-    
-    return (
-        <div className="main">
-            <button>{buttonText}</button>
-        </div>
-    );
+const MainContent = (props) => {
+    const [started, setStarted] = useState(false);
 
+    if (!started) {
+        return (
+            <div>
+                <button onClick={()=> setStarted(!started)}>Get Started</button>
+            </div>
+        );
+    }
+    else {
+        return (
+            <QuestionPage />
+        );
+    }
 };
 
 export default MainContent;
