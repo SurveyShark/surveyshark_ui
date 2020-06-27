@@ -1,21 +1,13 @@
-import React, {useState} from "react";
-import QuestionPage from "./QuestionPage";
+import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import QuestionPage from './QuestionPage'
 
-const MainContent = (props) => {
-    const [started, setStarted] = useState(false);
+const MainContent = () => (
+  <div>
+    <NavLink to="/question-one">
+      <button>Start</button>
+    </NavLink>
+  </div>
+)
 
-    if (!started) {
-        return (
-            <div>
-                <button onClick={()=> setStarted(!started)}>Get Started</button>
-            </div>
-        );
-    }
-    else {
-        return (
-            <QuestionPage />
-        );
-    }
-};
-
-export default MainContent;
+export default MainContent
