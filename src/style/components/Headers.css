@@ -59,7 +59,8 @@
   }
   .logo:hover,
   .nav-links:hover {
-    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   .small-nav {
