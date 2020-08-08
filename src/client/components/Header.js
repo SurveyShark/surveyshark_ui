@@ -20,7 +20,7 @@ const Headers = () => {
   return (
     <div>
       <nav className="navbar">
-        <a href="#" className="logo">
+        <a href="/" className="logo">
           SurveyShark
         </a>
         <ul className="small-nav">
