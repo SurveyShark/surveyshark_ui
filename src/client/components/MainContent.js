@@ -7,7 +7,9 @@ const MainContent = (props) => {
     if (!started) {
         return (
             <div>
-                <button onClick={()=> setStarted(!started)}>Get Started</button>
+                <h1 className="logo">Survey Sharks</h1>
+                <h4 className="motto">A motto or something of the sort.</h4>
+                <button className="start" onClick={()=> setStarted(!started)}>Get Started</button>
             </div>
         );
     }
