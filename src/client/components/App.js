@@ -1,22 +1,11 @@
-import React from 'react';
-import './App.css';
-import '../../style/styling.css';
-
-import Header from "./Header";
-import MainContent from "./MainContent";
-import Footer from "./Footer";
-
+import React from 'react'
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <MainContent />
-      <Footer />
+    <div>
+      <h1>Get started</h1>
     </div>
   )
 }
 
-export default App;
-
-
+export default App

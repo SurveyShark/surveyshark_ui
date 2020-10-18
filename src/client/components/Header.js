@@ -1,17 +1,56 @@
-import React from "react";
+import React, { useState } from 'react'
+import '../../style/components/Headers.css'
 
+const Links = () => {
+  return (
+    <>
+      <li>
+        <a href="#" className="show-links">
+          Link1
+        </a>
+      </li>
+      <li>
+        <a href="#" className="show-links">
+          Link2
+        </a>
+      </li>
+      <li>
+        <a href="#" className="show-links">
+          Link3
+        </a>
+      </li>
+    </>
+  )
+}
 
 const Headers = () => {
-    return (
-        <div className="header">
-            <ul className="menuList">
-                <li className="menuItem active"><a href="https://www.google.com/">Menu1</a></li>
-                <li className="menuItem"><a href="https://www.google.com/">Menu2</a></li>
-                <li className="menuItem"><a href="https://www.google.com/">Menu3</a></li>
-                <li className="menuItem"><a href="https://www.google.com/">Menu4</a></li>
-            </ul>
-        </div>
-    );
-};
+  const [showDropDown, setShowDropDown] = useState(false)
+  const handleDropDown = (event) => setShowDropDown(!showDropDown)
 
-export default Headers;
+  return (
+    <div>
+      <nav className="navbar">
+        <a href="/" className="logo">
+          SurveyShark
+        </a>
+        <ul className="small-nav">
+          <button onClick={handleDropDown}> 🞬 </button>
+          {showDropDown
+            ? ['Link1'].map((link) => (
+                <li>
+                  <a href="#" className="nav-links">
+                    {link}
+                  </a>
+                </li>
+              ))
+            : []}
+        </ul>
+        <ul className="main-nav">
+          <Links />
+        </ul>
+      </nav>
+    </div>
+  )
+}
+
+export default Headers

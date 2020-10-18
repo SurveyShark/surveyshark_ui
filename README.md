@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisites
+
+This project requires the following development tools to be installed on your workstation prior to contributing to it:
+
+- [git-scm](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [Node JS](https://nodejs.org/en/) Version [12.16.3](https://nodejs.org/download/release/v12.16.3/)
+  - (Recommended but optional) [nvm](https://github.com/nvm-sh/nvm) (Linux & Mac OS) or [nvm-windows](https://github.com/coreybutler/nvm-windows) (Windows) may be used to manage Node version being used during development.
+- [Yarn Package Manager](https://classic.yarnpkg.com/en/docs/install)
+- (Recommended) [VS Code](https://code.visualstudio.com/)
+
 ## Available Scripts
 
 To start, clone repo:
@@ -19,6 +29,7 @@ You will also see any lint errors in the console.
 To run Node server:
 
 ### `yarn run build`
+
 ### `node src/server/server.js`
 
 For running tests:
