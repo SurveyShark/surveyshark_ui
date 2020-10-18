@@ -1,18 +1,39 @@
-import React from "react";
+import React, { useState } from 'react'
+//WIP - Still sees Header.css
+import '../../style/components/Footer.css'
 
+const Links = () => {
+  return (
+    <>
+      <li>
+        <a href="#" className="show-links">
+          Link1
+        </a>
+      </li>
+      <li>
+        <a href="#" className="show-links">
+          Link2
+        </a>
+      </li>
+      <li>
+        <a href="#" className="show-links">
+          Link3
+        </a>
+      </li>
+    </>
+  )
+}
 
 const Footer = () => {
-    return (
-        <div className="footer">
-            <ul className="menuList">
-                <li className="menuItem"><a href="https://www.google.com/">Link1</a></li>
-                <li className="menuItem"><a href="https://www.google.com/">Link2</a></li>
-                <li className="menuItem"><a href="https://www.google.com/">Link3</a></li>
-                <li className="menuItem"><a href="https://www.google.com/">Link4</a></li>
-            </ul>
-        </div>
+  return (
+    <div>
+      <nav className="navbar">
+        <ul>
+          <Links />
+        </ul>
+      </nav>
+    </div>
+  )
+}
 
-    );
-};
-
-export default Footer;
+export default Footer
