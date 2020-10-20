@@ -1,15 +1,8 @@
-.header {
-  display: flex;
-  align-items: center;
-  padding: 0 1em;
-  text-align: left;
-}
-.header-title {
-  flex: 1 1 auto;
-}
-.header-menu :hover {
-  color: gray;
-}
+/**************************************/
+/*                                    */
+/*                APP                 */
+/*                                    */
+/**************************************/
 #root,
 body,
 html,
@@ -21,4 +14,94 @@ html,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+/**************************************/
+/*                                    */
+/*               HEADER               */
+/*                                    */
+/**************************************/
+.header {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background-color: #333;
+}
+.header-title {
+  flex: 1 1 auto;
+}
+.header .menuList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.header .menuItem {
+  float: left;
+}
+.header .menuItem a {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+}
+.header .menuItem a:hover {
+  background-color: #111;
+}
+.header .menuItem.active {
+  background-color: #a31717;
+}
+.header .menuItem.active a:hover {
+  background-color: #4e0a0a;
+}
+/**************************************/
+/*                                    */
+/*            MAIN CONTENT            */
+/*                                    */
+/**************************************/
+.start {
+  padding: 1em 2em;
+  width: 15em;
+  border: none;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #a31717;
+}
+.start:hover {
+  background-color: #4e0a0a;
+}
+/**************************************/
+/*                                    */
+/*               FOOTER               */
+/*                                    */
+/**************************************/
+.footer {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background-color: #333;
+}
+.footer-title {
+  flex: 1 1 auto;
+}
+.footer .menuList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.footer .menuItem {
+  float: left;
+}
+.footer .menuItem a {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+}
+.footer .menuItem a:hover {
+  background-color: #111;
 }

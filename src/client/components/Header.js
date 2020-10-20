@@ -9,6 +9,16 @@ const Links = () => {
           Link1
         </a>
       </li>
+      <li>
+        <a href="#" className="show-links">
+          Link2
+        </a>
+      </li>
+      <li>
+        <a href="#" className="show-links">
+          Link3
+        </a>
+      </li>
     </>
   )
 }

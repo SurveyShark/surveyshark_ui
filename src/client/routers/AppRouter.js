@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom'
 import Headers from '../components/Header'
 import MainContent from '../components/MainContent'
+import Footer from '../components/Footer'
 import QuestionOne from '../views/QuestionOne'
 import QuestionTwo from '../views/QuestionTwo'
 import QuestionThree from '../views/QuestionThree'
@@ -32,6 +33,7 @@ const AppRouter = () => (
         <Route path="/question-ten" component={QuestionTen} />
         <Route path="/submission" component={Submission} />
       </Switch>
+      <Footer />
     </div>
   </BrowserRouter>
 )

@@ -1,23 +1,147 @@
+//----------------------------------//
+//                                  //
+//         Color Variables          //
+//                                  //
+//----------------------------------//
+@font-primary: #FFF;
+
+@background-primary: #333;
+@background-primary-hover: #111;
+
+@background-secondary: #a31717;
+@background-secondary-hover: #4e0a0a;
+
+
+
+/**************************************/
+/*                                    */
+/*                APP                 */
+/*                                    */
+/**************************************/
+#root, body, html, .App {
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+ 
+    justify-content: space-between;
+}
+
+
+/**************************************/
+/*                                    */
+/*               HEADER               */
+/*                                    */
+/**************************************/
 .header{
     display: flex;
     align-items: center;
-    padding: 0 1em;
     text-align: left;
+    background-color: @background-primary;
 
     &-title{
         flex:1 1 auto;
     }
 
+    .menuList{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: @background-primary;
+    }
+
+    .menuItem{
+        float: left;
+      
+        a{
+            display: block;
+            color: @font-primary;
+            text-align: center;
+            padding: 1em 1em;
+            text-decoration: none;
+        
+            &:hover{
+                background-color: @background-primary-hover;
+            }
+        }
+    
+        &.active {
+            background-color: @background-secondary;
+        
+            a:hover{
+                background-color: @background-secondary-hover;
+            }
+        }
+    }    
 }
 
-#root, body, html, .App {
-    height: 100%;
-    box-sizing: border-box;
+
+  
+
+
+/**************************************/
+/*                                    */
+/*            MAIN CONTENT            */
+/*                                    */
+/**************************************/
+
+.start{
+    padding: 1em 2em;
+    width: 15em;
+    border:none;
+    font-weight: bold;
+
+    color: @font-primary;
+    background-color: @background-secondary;
+    
+    &:hover{
+        background-color: @background-secondary-hover;
+    }
 }
 
 
-.App{
+
+/**************************************/
+/*                                    */
+/*               FOOTER               */
+/*                                    */
+/**************************************/
+.footer{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    background-color: @background-primary;
+
+    &-title{
+        flex:1 1 auto;
+    }
+
+    .menuList{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: @background-primary;
+    }
+
+    .menuItem{
+        float: left;
+      
+        a{
+            display: block;
+            color: @font-primary;
+            text-align: center;
+            padding: 0.5em 0.5em;
+            text-decoration: none;
+        
+            &:hover{
+                background-color: @background-primary-hover;
+            }
+        }
+    }    
 }
